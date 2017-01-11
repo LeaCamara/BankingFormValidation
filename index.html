@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Banking Form</title>
+  <meta name="description" content="A sample banking form.">
+  <link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+<body>
+  <form>
+    <h1>Banking Form</h1>
+    <p>Interested in one of our loans?</p>
+    <p>Please complete the application below.</p>
+    <fieldset>
+      <legend>Demographic Information</legend>
+        First Name
+        <br>
+        <input type="text" name="firstName" size="20" maxlength="40">
+        <br>
+        Middle Initial
+        <br>
+        <input type="text" name="middleInitial" size="20" maxlength="40">
+        <br>
+        Last Name
+        <br>
+        <input type="text" name="lastName" size="20" maxlength="40">
+        <br>
+        Address
+        <br>
+        <input type="text" name="address" size="20" maxlength="40">
+        <br>
+        Occupation
+        <br>
+        <input type="text" name="occupation" size="20" maxlength="40">
+        <br>
+        Employer
+        <br>
+        <input type="text" name="employer" size="20" maxlength="40">
+        <br>
+        Employer Address
+        <br>
+        <input type="text" name="employerAddress" size="20" maxlength="40">
+    </fieldset>
+    <fieldset>
+      <legend>Loan Information</legend>
+        Type of Loan
+        <br>
+        <select name="loanType">
+            <option value="selectLoanType" select="selected">Select a Loan Type</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Personal">Personal</option>
+            <option value="Mortgage">Mortgage</option>
+        </select>
+        <br><br>
+        Requested Amount of Loan
+        <br>
+        <input type="text" name="requestedLoanAmount" size="10" maxlength="15">
+        <br><br>
+        Loan Length
+        <br>
+        <label><input type="radio" name="loan-length" value="5 Years" checked="checked"> 5 Years</label>
+        <label><input type="radio" name="loan-length" value="15 Years"> 15 Years</label>
+        <label><input type="radio" name="loan-length" value="30 Years"> 30 Years</label>
+        <br><br>
+        Special Conditions
+        <br>
+        <input type="checkbox" name="special-conditions" id="downPmt" value="downPmt" checked="checked"><label for="downPmt">I have a down payment</label>
+        <input type="checkbox" name="special-conditions" id="outOfState" value="outOfState"> <label for="outOfState">Out-of-state Resident</label>
+        <input type="checkbox" name="special-conditions" id="married" value="married"><label for="married">Married</label>
+        <input type="checkbox" name="special-conditions" id="cosigned" value="cosigned"><label for="cosigned">Loan will be co-signed</label>
+    </fieldset>
+    <fieldset>
+      <legend>Additional Information</legend>
+        Comments
+        <br>
+        <textarea name="comments" rows="5" cols="30"></textarea>
+        <br>
+        Email
+        <br>
+        <input type="email" name="email" size="20" maxlength="40">
+        <br>
+        Phone
+        <br>
+        <input type="tel" name="phone" size="15" maxlength="20">
+        <br>
+        LinkedIn URL
+        <br>
+        <input type="url" name="linkedIn" size="40" maxlength="80">
+        <br>
+    </fieldset>
+    <p>Ready to apply?</p>
+    <p>Please send us your application via the Submit button below.</p>
+    <input type="submit" value="Submit Application">
+    <br>
+    <p>Thanks for your application! We'll be in touch.</p>
+  </form>
+</body>
+</html>
