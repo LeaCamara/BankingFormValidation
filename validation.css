@@ -1,0 +1,41 @@
+/* Email and URL Validation */
+
+input[type="email"]:valid, input[type="url"]:valid {
+  background-color: green;
+}
+
+input[type="email"]:invalid, input[type="url"]:invalid {
+  background-color: red;
+}
+
+
+/* Other Form Styling */
+
+form {
+  width: 50%;
+  margin: .75em;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.2em;
+  color: #1C1A34;
+}
+
+input[type="submit"] {
+  font-size: .8em;
+  color: #1C1A34;
+  background-color: lightgray;
+}
+
+legend {
+  font-weight: 700;
+  color: #1C1A34;
+}
+
+fieldset {
+  border: 5px solid #8886A0;
+  margin: 2em;
+  padding: 1.2em;
+}
+
+input {
+  height: 20px;
+}
